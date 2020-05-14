@@ -1,1 +1,44 @@
-<p>formulario works!</p>
+<div id="form-main">
+  <div id="form-div">
+    <form
+      class="form"
+      id="form1"
+      action="https://formspree.io/mpzywoba"
+      method="POST"
+    >
+      <p class="name">
+        <input
+          name="name"
+          type="text"
+          class="validate[required,custom[onlyLetter],length[0,100]] feedback-input"
+          placeholder="Nombre"
+          id="name"
+        />
+      </p>
+
+      <p class="email">
+        <input
+          type="text"
+          name="_replyto"
+          class="validate[required,custom[email]] feedback-input"
+          id="email"
+          placeholder="Correo"
+        />
+      </p>
+
+      <p class="text">
+        <textarea
+          name="message"
+          class="validate[required,length[6,300]] feedback-input"
+          id="comment"
+          placeholder="Escribe un mensaje..."
+        ></textarea>
+      </p>
+
+      <div class="submit">
+        <input type="submit" value="Enviar" id="button-blue" />
+        <div class="ease"></div>
+      </div>
+    </form>
+  </div>
+</div>

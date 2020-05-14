@@ -1,1 +1,11 @@
-<p>contacto works!</p>
+<div *ngIf="cargando">
+  <app-spinner></app-spinner>
+</div>
+<div *ngIf="!cargando">
+  <app-map></app-map>
+  <div class="titulo">
+    <strong>¿Tienes dudas?</strong> déjanos un mensaje y te responderemos a la
+    brevedad
+  </div>
+  <app-formulario></app-formulario>
+</div>

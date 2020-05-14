@@ -1,20 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormularioComponent } from './components/formulario/formulario.component';
-import { ContactoComponent } from './pages/contacto/contacto.component';
+import { ContactoModule } from './pages/contacto/contacto.module';
+import { HeaderComponent } from './shared/header/header.component';
+import { FooterComponent } from './shared/footer/footer.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormularioComponent,
-    ContactoComponent
+    HeaderComponent,
+    FooterComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ContactoModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

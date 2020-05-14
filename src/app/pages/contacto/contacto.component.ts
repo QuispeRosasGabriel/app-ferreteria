@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contacto.component.scss']
 })
 export class ContactoComponent implements OnInit {
-
-  constructor() { }
+  cargando: boolean
+  constructor() {
+    // this.cargando = true;
+  }
 
   ngOnInit() {
+    this.terminarCarga()
+  }
+
+  terminarCarga() {
+    setTimeout(() => {
+      this.cargando = false
+    }, 3000);
   }
 
 }
